@@ -3,6 +3,9 @@ package Game;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -27,6 +30,7 @@ public class GF extends JFrame{
         JButton jb7 = new JButton("地图7");
         JButton jb8 = new JButton("地图8");
         JButton jb9 = new JButton("地图9");
+        JButton jb_up = new JButton("上");
         jp1.add(jb1);
         jp1.add(jb2);
         jp1.add(jb3);
@@ -36,6 +40,7 @@ public class GF extends JFrame{
         jp1.add(jb7);
         jp1.add(jb8);
         jp1.add(jb9);
+        jp1.add(jb_up);
 
         JPanel jp2 = new JPanel();
         jp2.setLayout(null);
@@ -44,7 +49,6 @@ public class GF extends JFrame{
         this.add(jp1);
         this.add(jp2);
 
-        
         jb1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -72,6 +76,14 @@ public class GF extends JFrame{
 
                 revalidate();
                 repaint();
+            }
+        });
+
+        jb_up.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.print("left");
+                Player.right = true;
             }
         });
 

@@ -59,7 +59,7 @@ public abstract class Hero{
             this.y -= speed;
         }
         if (hitMan(x, y - speed)) {
-            flag1 ++;
+            flag1++;
         }
         setImg(upImg);
         direction = Direction.UP;
@@ -88,10 +88,11 @@ public abstract class Hero{
     }
 
     public void rightward() {
-        if (!moveToBorder(x + speed, y)) {
+        if (!moveToBorder(x + speed, y)&& !hitMan(x + speed, y)) {
             this.x += speed;
         }
         if (hitMan(x + speed, y)) {
+            this.x -= speed;
             flag1++;
         }
         setImg(rightImg);
