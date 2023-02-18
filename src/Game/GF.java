@@ -5,19 +5,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.Timer;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class GF extends JFrame{
-    public void printFrame() {
-        this.setLayout(null);
-        this.setSize(1600, 950); // 设置窗口大小
+public class GF extends JFrame {
+    public GF() {
+        setLayout(null);
+        this.setSize(1600, 1600); // 设置窗口大小
         this.setLocationRelativeTo(null); // 把窗口位置设置到屏幕中心
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 关闭窗口模式
         this.setResizable(false); // 窗口固定
-
+    }
+    public void printFrame() {
+        Timer timer = new Timer();
         JPanel jp1 = new JPanel();
         jp1.setBounds(0, 0, 1600, 50);
 
@@ -55,6 +58,15 @@ public class GF extends JFrame{
         this.add(jp1);
         this.add(jp2);
 
+        //绘制地图1
+        GP1 tp1 = new GP1();
+        tp1.printP();
+        jp2.removeAll();
+        tp1.setBounds(0, 0, 1600, 900);
+        jp2.add(tp1);
+        revalidate();
+        repaint();
+
         jb1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -90,6 +102,12 @@ public class GF extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 System.out.print("up");
                 Player.up = true;
+                timer.schedule(new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        Player.up = false;
+                    }
+                }, 500);
             }
         });
 
@@ -98,6 +116,12 @@ public class GF extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 System.out.print("down");
                 Player.down = true;
+                timer.schedule(new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        Player.down = false;
+                    }
+                }, 500);
             }
         });
 
@@ -106,6 +130,12 @@ public class GF extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 System.out.print("left");
                 Player.left = true;
+                timer.schedule(new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        Player.left = false;
+                    }
+                }, 500);
             }
         });
 
@@ -114,6 +144,12 @@ public class GF extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 System.out.print("right");
                 Player.right = true;
+                timer.schedule(new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        Player.right = false;
+                    }
+                }, 500);
             }
         });
 

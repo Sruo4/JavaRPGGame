@@ -33,10 +33,6 @@ public class GP2 extends GP {
         // 多线程
         ut = new UpdateThread(panel);
         ut.start();
-
-        //TODO: add more NPC
-        NPC1 npc_2 = new NPC1("src\\Image\\playerdown.png", 500, 350, this);
-        npc1list_2.add(npc_2);
     }
 
     class MyPanel extends JPanel {
@@ -48,9 +44,7 @@ public class GP2 extends GP {
             player.paintSelf(g);
 
             // 绘制npc
-            for (NPC1 npc1 : npc1list_2) {
-                npc1.paintSelf(g);
-            }
+            npc_2.paintSelf(g);
         }
     }
 }

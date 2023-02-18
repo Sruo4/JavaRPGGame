@@ -33,11 +33,6 @@ public class GP1 extends GP {
         // 多线程
         ut = new UpdateThread(panel);
         ut.start();
-
-
-
-        npc1list.add(npc_1);
-        npc1list.add(npc_2);
     }
     
     class MyPanel extends JPanel {
