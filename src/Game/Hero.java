@@ -169,51 +169,51 @@ public abstract class Hero{
             flag7++;
             return true;
         }
-        // //map7npc8
-        // if (next.intersects(npc8.getRec()) && GF.mapId == 7) {
-        //     flag8++;
-        // }
-        // if (flag8 == 1) {
-        //     new Message8();
-        //     flag8++;
-        //     return true;
-        // }
-        // //map7npc9
-        // if (next.intersects(npc9.getRec()) && GF.mapId == 7) {
-        //     flag9++;
-        // }
-        // if (flag9 == 1) {
-        //     new Message9();
-        //     flag9++;
-        //     return true;
-        // }
-        // //map8npc10
-        // if (next.intersects(npc10.getRec()) && GF.mapId == 8) {
-        //     flag10++;
-        // }
-        // if (flag10 == 1) {
-        //     new Message10();
-        //     flag10++;
-        //     return true;
-        // }
-        // //map9npc11
-        // if (next.intersects(npc11.getRec()) && GF.mapId == 9) {
-        //     flag11++;
-        // }
-        // if (flag11 == 1) {
-        //     new Message11();
-        //     flag11++;
-        //     return true;
-        // }
-        // //map9npc12
-        // if (next.intersects(npc12.getRec()) && GF.mapId == 9) {
-        //     flag12++;
-        // }
-        // if (flag12 == 1) {
-        //     new Message12();
-        //     flag12++;
-        //     return true;
-        // }
+        //map7npc8
+        if (next.intersects(npc8.getRec()) && GF.mapId == 7) {
+            flag8++;
+        }
+        if (flag8 == 1) {
+            new Message8();
+            flag8++;
+            return true;
+        }
+        //map7npc9
+        if (next.intersects(npc9.getRec()) && GF.mapId == 7) {
+            flag9++;
+        }
+        if (flag9 == 1) {
+            new Message9();
+            flag9++;
+            return true;
+        }
+        //map8npc10
+        if (next.intersects(npc10.getRec()) && GF.mapId == 8) {
+            flag10++;
+        }
+        if (flag10 == 1) {
+            new Message10();
+            flag10++;
+            return true;
+        }
+        //map9npc11
+        if (next.intersects(npc11.getRec()) && GF.mapId == 9) {
+            flag11++;
+        }
+        if (flag11 == 1) {
+            new Message11();
+            flag11++;
+            return true;
+        }
+        //map9npc12
+        if (next.intersects(npc12.getRec()) && GF.mapId == 9) {
+            flag12++;
+        }
+        if (flag12 == 1) {
+            new Message12();
+            flag12++;
+            return true;
+        }
         return false;
     }
 
