@@ -31,6 +31,9 @@ public class GF extends JFrame{
         JButton jb8 = new JButton("地图8");
         JButton jb9 = new JButton("地图9");
         JButton jb_up = new JButton("上");
+        JButton jb_down = new JButton("下");
+        JButton jb_left = new JButton("左");
+        JButton jb_right= new JButton("右");
         jp1.add(jb1);
         jp1.add(jb2);
         jp1.add(jb3);
@@ -41,6 +44,9 @@ public class GF extends JFrame{
         jp1.add(jb8);
         jp1.add(jb9);
         jp1.add(jb_up);
+        jp1.add(jb_down);
+        jp1.add(jb_left);
+        jp1.add(jb_right);
 
         JPanel jp2 = new JPanel();
         jp2.setLayout(null);
@@ -82,7 +88,31 @@ public class GF extends JFrame{
         jb_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.print("up");
+                Player.up = true;
+            }
+        });
+
+        jb_down.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.print("down");
+                Player.down = true;
+            }
+        });
+
+        jb_left.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 System.out.print("left");
+                Player.left = true;
+            }
+        });
+
+        jb_right.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.print("right");
                 Player.right = true;
             }
         });

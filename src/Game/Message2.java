@@ -13,8 +13,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class Message{
-    public Message(){
+public class Message2{
+    public Message2(){
         JTextField jt1=new JTextField();//new一个文本框
         JTextArea jt2=new JTextArea(); //new一个文本区
         JScrollPane jsp=new JScrollPane(jt2); //new一个滚条
@@ -31,7 +31,7 @@ public class Message{
         jt2.setBackground(Color.gray);
 
         // NPC1对话
-        jt2.setText("海娜：你醒了？我知道被人敲晕抗走的滋味不好受，休息一下，缓过神来再说。\n 1.这是哪里？\n 2.你打扰到我睡觉了，快起开，让我再睡一会儿");
+        jt2.setText("海娜：你醒了？");
         
         jt1.addActionListener(new ActionListener() { // 监听器
             public void actionPerformed(ActionEvent e) {

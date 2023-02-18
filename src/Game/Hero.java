@@ -37,8 +37,7 @@ public abstract class Hero{
     //界面
 
     //npc接触标志
-    int flag1 = 0;
-    NPC1 tmpNpc1;
+    int flag1 = 0,flag2= 0;
 
 
     // 构造函数
@@ -60,6 +59,8 @@ public abstract class Hero{
         }
         if (hitMan(x, y - speed)) {
             flag1++;
+            flag2++;
+
         }
         setImg(upImg);
         direction = Direction.UP;
@@ -70,7 +71,9 @@ public abstract class Hero{
             this.y += speed;
         }
         if (hitMan(x, y + speed)) {
-            flag1 ++;
+            flag1++;
+            flag2++;
+
         }
         setImg(downImg);
         direction = Direction.DOWN;
@@ -82,6 +85,8 @@ public abstract class Hero{
         }
         if (hitMan(x - speed, y)) {
             flag1++;
+            flag2++;
+
         }
         setImg(leftImg);
         direction = Direction.LEFT;
@@ -94,6 +99,7 @@ public abstract class Hero{
         if (hitMan(x + speed, y)) {
             this.x -= speed;
             flag1++;
+            flag2++;
         }
         setImg(rightImg);
         direction = Direction.RIGHT;
@@ -105,18 +111,28 @@ public abstract class Hero{
 
     //npc接触检测
     public boolean hitMan(int x, int y) {
-        ArrayList<NPC1> npc1_s = this.gp.npc1list;
+        NPC1 npc1 = this.gp.npc_1;
+        NPC1 npc2 = this.gp.npc_2;
         Rectangle next = new Rectangle(x, y, width, height);
-        for (NPC1 npc : npc1_s) {
-            if (next.intersects(npc.getRec())) {
-                flag1++;
-            }
+
+        if (next.intersects(npc1.getRec())) {
+            flag1++;
         }
         if (flag1 == 1) {
-            new Message(tmpNpc1);
+            new Message();
             flag1++;
             return true;
         }
+        //npc2
+        if (next.intersects(npc2.getRec())) {
+                flag2++;
+        }
+        if (flag2 == 1) {
+            new Message2();
+            flag2++;
+            return true;
+        }
+
         return false;
     }
 

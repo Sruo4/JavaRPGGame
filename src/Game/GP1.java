@@ -36,9 +36,8 @@ public class GP1 extends GP {
 
 
 
-        // 添加npc
-        NPC1 npc_1 = new NPC1("src\\Image\\npc01.png", 500, 350, this);
         npc1list.add(npc_1);
+        npc1list.add(npc_2);
     }
     
     class MyPanel extends JPanel {
@@ -50,9 +49,7 @@ public class GP1 extends GP {
             player.paintSelf(g);
 
             // 绘制npc
-            for (NPC1 npc1 : npc1list) {
-                npc1.paintSelf(g);
-            }
+            npc_1.paintSelf(g);
         }
     }
 }
