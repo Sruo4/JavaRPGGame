@@ -38,13 +38,13 @@ public class GP5 extends GP {
     class MyPanel extends JPanel {
         public void paint(Graphics g) {
             // 绘制地图
-            ImageIcon map1 = new ImageIcon("src\\Image\\map1.png");
+            ImageIcon map1 = new ImageIcon("src\\Image\\map5.png");
             g.drawImage(map1.getImage(), 0, 0, null);
             // 绘制玩家
             player.paintSelf(g);
 
             // 绘制npc
-            npc_1.paintSelf(g);
+            npc_6.paintSelf(g);
         }
     }
 }

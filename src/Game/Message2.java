@@ -18,7 +18,7 @@ public class Message2{
         JTextField jt1=new JTextField();//new一个文本框
         JTextArea jt2=new JTextArea(); //new一个文本区
         JScrollPane jsp=new JScrollPane(jt2); //new一个滚条
-        String title = "Hello";
+        String title = "地图2";
         JFrame jf=new JFrame(title);
         Container container=jf.getContentPane();
         container.setBackground(Color.yellow); //容器的背景色
@@ -31,25 +31,18 @@ public class Message2{
         jt2.setBackground(Color.gray);
 
         // NPC1对话
-        jt2.setText("海娜：你醒了？");
+        jt2.setText("韦勒管家：我们和凯姆洛恩的塞巴斯蒂安公爵......出了点......小状况。也许你愿意帮忙把公爵从危险中营救出来。\n1. 发生了什么？");
         
         jt1.addActionListener(new ActionListener() { // 监听器
             public void actionPerformed(ActionEvent e) {
                 String s = jt1.getText();
                 if (s.equals("1")) {
-                    jt2.setText("这里是斯凯省的监狱旁的树林\n 1.我怎么会在这里？\n 2.你刚才说我被敲晕了，怎么回事");
-                } else if (s.equals("2")) {
-                    jt2.setText("懒惰的人想必没什么用处，去死吧\n 1.好吧");
-                } else if (s.equals("11") || s.equals("12")) {
-                    jt2.setText("据我所知，当时你正在非法穿越国界，被士兵们抓到后却和他们一起被我们国家肆虐的狼人袭击了\n 1.狼人？\n2.这算什么狗血剧情啊喂？");
-                }else if(s.equals("112")|| s.equals("122")){
-                    jt2.setText("放心，更狗血的还在后面呢！你可以帮我阻止那些杀人不眨眼的家伙吗？\n 1.同意");
-                }else if (s.equals("111")||s.equals("121")) {
-                    jt2.setText("对，就是那些杀人不眨眼的家伙，你可以帮我阻止他们吗？\n 1.同意");
-                } else if (s.equals("1111") || s.equals("1121") || s.equals("1211") || s.equals("1221")) {
-                    jt2.setText("奥尔德说狼人已经占领了凯姆洛恩，公爵已经逃走了。\n我没有能力帮到他，但或许你可以，奥尔德的韦勒管家可能知道更多信息，你可以先去找他。\n 1.前往凯姆洛恩 \n2.再见");
-                } else if (s.equals("11111") || s.equals("11211") || s.equals("12111") || s.equals("12211")|| s.equals("11112") || s.equals("11212") || s.equals("12112") || s.equals("12212")
-                        || s.equals("21")) {
+                    jt2.setText("我们笨手笨脚的城镇守卫玩忽职守，导致公爵被绑架了，这就是事情的真相，你看起来很有本事，以你的能力肯定能帮助我们，求你了。\n 1. 谁绑架了公爵？");
+                } else if (s.equals("11")) {
+                    jt2.setText("该死的血荆棘教徒！凯姆洛恩陷入一片混乱，公爵也遭人绑架，这帮邪教徒到底想做什么？还好雄狮卫及时赶到，如果你愿意帮忙，请去和哈里马尔中尉谈谈。\n1.哈里马尔中尉在哪");
+                }else if(s.equals("111")){
+                    jt2.setText("哈里马尔中尉去灯塔里侦察了，也继续血荆棘藏匿公爵的地点就在那里。\n1.再见");
+                }else if (s.equals("1111")) {
                     jf.dispose();
                 }
             }

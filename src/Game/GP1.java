@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class GP1 extends GP {
+
+
     // JLabel jl1 = new JLabel(new ImageIcon("src\\Image\\map1.png"));
     Player player = new Player("src\\Image\\playerdown.png", 250, 350, this, "src\\Image\\playerup.png",
             "src\\Image\\playerdown.png", "src\\Image\\playerleft.png", "src\\Image\\playerright.png");

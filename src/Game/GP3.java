@@ -15,7 +15,7 @@ public class GP3 extends GP {
     // JLabel jl1 = new JLabel(new ImageIcon("src\\Image\\map1.png"));
     Player player = new Player("src\\Image\\playerdown.png", 250, 350, this, "src\\Image\\playerup.png",
             "src\\Image\\playerdown.png", "src\\Image\\playerleft.png", "src\\Image\\playerright.png");
-
+    
     UpdateThread ut;
 
     public void printP() {
@@ -44,7 +44,8 @@ public class GP3 extends GP {
             player.paintSelf(g);
 
             // 绘制npc
-            npc_1.paintSelf(g);
+            npc_4.paintSelf(g);
+            npc_3.paintSelf(g);
         }
     }
 }

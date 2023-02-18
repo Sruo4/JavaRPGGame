@@ -12,6 +12,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class GF extends JFrame {
+    // 地图匹配标志
+    public static int mapId = 1;
+
     public GF() {
         setLayout(null);
         this.setSize(1600, 1600); // 设置窗口大小
@@ -19,6 +22,7 @@ public class GF extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 关闭窗口模式
         this.setResizable(false); // 窗口固定
     }
+
     public void printFrame() {
         Timer timer = new Timer();
         JPanel jp1 = new JPanel();
@@ -36,7 +40,7 @@ public class GF extends JFrame {
         JButton jb_up = new JButton("上");
         JButton jb_down = new JButton("下");
         JButton jb_left = new JButton("左");
-        JButton jb_right= new JButton("右");
+        JButton jb_right = new JButton("右");
         jp1.add(jb1);
         jp1.add(jb2);
         jp1.add(jb3);
@@ -58,7 +62,7 @@ public class GF extends JFrame {
         this.add(jp1);
         this.add(jp2);
 
-        //绘制地图1
+        // 绘制地图1
         GP1 tp1 = new GP1();
         tp1.printP();
         jp2.removeAll();
@@ -72,6 +76,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP1 tp1 = new GP1();
+                mapId = 1;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -87,6 +92,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP2 tp1 = new GP2();
+                mapId = 2;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -102,6 +108,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP3 tp1 = new GP3();
+                mapId = 3;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -117,6 +124,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP4 tp1 = new GP4();
+                mapId = 4;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -132,6 +140,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP5 tp1 = new GP5();
+                mapId = 5;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -147,6 +156,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP6 tp1 = new GP6();
+                mapId = 6;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -162,6 +172,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP7 tp1 = new GP7();
+                mapId = 7;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -177,6 +188,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP8 tp1 = new GP8();
+                mapId = 8;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -192,6 +204,7 @@ public class GF extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // TODO Auto-generated method stub
                 GP9 tp1 = new GP9();
+                mapId = 9;
                 tp1.printP();
                 jp2.removeAll();
                 tp1.setBounds(0, 0, 1600, 900);
@@ -201,16 +214,6 @@ public class GF extends JFrame {
                 repaint();
             }
         });
-
-
-
-
-
-
-
-
-
-
 
         jb_up.addActionListener(new ActionListener() {
             @Override
