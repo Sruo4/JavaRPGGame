@@ -57,11 +57,6 @@ public abstract class Hero{
         if (!moveToBorder(x, y - speed)) {
             this.y -= speed;
         }
-        if (hitMan(x, y - speed)) {
-            flag1++;
-            flag2++;
-
-        }
         setImg(upImg);
         direction = Direction.UP;
     }
@@ -69,11 +64,6 @@ public abstract class Hero{
     public void downward() {
         if (!moveToBorder(x, y + speed)) {
             this.y += speed;
-        }
-        if (hitMan(x, y + speed)) {
-            flag1++;
-            flag2++;
-
         }
         setImg(downImg);
         direction = Direction.DOWN;
@@ -83,11 +73,6 @@ public abstract class Hero{
         if (!moveToBorder(x - speed, y)) {
             this.x -= speed;
         }
-        if (hitMan(x - speed, y)) {
-            flag1++;
-            flag2++;
-
-        }
         setImg(leftImg);
         direction = Direction.LEFT;
     }
@@ -95,11 +80,6 @@ public abstract class Hero{
     public void rightward() {
         if (!moveToBorder(x + speed, y)&& !hitMan(x + speed, y)) {
             this.x += speed;
-        }
-        if (hitMan(x + speed, y)) {
-            this.x -= speed;
-            flag1++;
-            flag2++;
         }
         setImg(rightImg);
         direction = Direction.RIGHT;
@@ -132,7 +112,6 @@ public abstract class Hero{
             flag2++;
             return true;
         }
-
         return false;
     }
 
@@ -144,7 +123,7 @@ public abstract class Hero{
             return true;
         } else if (y<0) {
             return true;
-        } else if (y + height > this.gp.getHeight()) {
+        } else if (y + height+70 > this.gp.getHeight()) {
             return true;
         }
         return false;

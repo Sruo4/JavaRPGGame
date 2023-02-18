@@ -97,6 +97,121 @@ public class GF extends JFrame {
             }
         });
 
+        jb3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP3 tp1 = new GP3();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+        jb4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP4 tp1 = new GP4();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+        jb5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP5 tp1 = new GP5();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+        jb6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP6 tp1 = new GP6();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+        jb7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP7 tp1 = new GP7();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+        jb8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP8 tp1 = new GP8();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+        jb9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                GP9 tp1 = new GP9();
+                tp1.printP();
+                jp2.removeAll();
+                tp1.setBounds(0, 0, 1600, 900);
+                jp2.add(tp1);
+
+                revalidate();
+                repaint();
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
         jb_up.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
