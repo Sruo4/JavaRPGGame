@@ -31,7 +31,7 @@ public class Message10 {
         jt2.setBackground(Color.gray);
 
         // NPC1对话
-        jt2.setText("公爵：什么？你杀掉了格洛丽亚？你被法奥楚骗了，我并没有被感染。\n1.完成(游戏结束)");
+        jt2.setText("公爵：什么？你杀掉了格洛丽亚？\n你被法奥楚骗了，我并没有被感染。\n1.完成(游戏结束)");
 
         jt1.addActionListener(new ActionListener() { // 监听器
             public void actionPerformed(ActionEvent e) {

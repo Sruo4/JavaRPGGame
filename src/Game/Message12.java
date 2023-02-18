@@ -48,12 +48,11 @@ public class Message12 {
                 public void actionPerformed(ActionEvent e) {
                     String s = jt1.getText();
                     if (s.equals("1")) {
-                        jt2.setText("你真的是个老软蛋·通常情况下，我绝不会词养狼人当宠物·但这次事件中，或许你是对的·如果我们能治愈公爵，肯定比杀了他要好  \n1.完成(游戏结束)。");
+                        jt2.setText("你真的是个老软蛋·通常情况下，我绝不会词养狼人当宠物·\n但这次事件中，或许你是对的·如果我们能治愈公爵，肯定比杀了他要好  \n1.完成(游戏结束)。");
                     } else if (s.equals("11")) {
                         System.exit(0);
                     }
                 }
-
             });
         }
     }

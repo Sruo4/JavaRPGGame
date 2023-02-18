@@ -31,7 +31,7 @@ public class Message5 {
         jt2.setBackground(Color.gray);
 
         // NPC1对话
-        jt2.setText("格洛丽亚：我的处决者来了？你看上去弱的连斧子都挥不动，更别提处理那些流出来的鲜血了·  \n1. 为血荆省下你的侮辱吧·我是来救你的·");
+        jt2.setText("格洛丽亚：我的处决者来了？\n你看上去弱的连斧子都挥不动，更别提处理那些流出来的鲜血了·  \n1. 为血荆省下你的侮辱吧·我是来救你的·");
 
         jt1.addActionListener(new ActionListener() { // 监听器
             public void actionPerformed(ActionEvent e) {
@@ -39,9 +39,9 @@ public class Message5 {
                 if (s.equals("1")) {
                     jt2.setText("太棒了·给我松绑·我们会杀了这些血荆的狗，然后去找法奥楚和他的狼人·\n1.塞巴斯安公想先和你谈谈·");
                 } else if (s.equals("11")) {
-                    jt2.setText("塞巴斯蒂安？我们没时间“““哦，好吧·我们会和公爵谈谈的·那我们走吧·没时间浪费了·1.别动．我这就给你松绑 2你对法奥楚有什么样的威胁？");
+                    jt2.setText("塞巴斯蒂安？我们没时间......哦，好吧·我们会和公爵谈谈的。\n那我们走吧·没时间浪费了·、\n1.别动．我这就给你松绑 2你对法奥楚有什么样的威胁？");
                 } else if (s.equals("112")) {
-                    jt2.setText("这么说吧，我有些内部消息可以帮助我们做掉这条癞皮狗·现在赶紧给我松绑·1.给他松绑");
+                    jt2.setText("这么说吧，我有些内部消息可以帮助我们做掉这条癞皮狗·现在赶紧给我松绑·\n1.给他松绑");
                 } else if (s.equals("111") || s.equals("1121")) {
                     jf.dispose();
                 }

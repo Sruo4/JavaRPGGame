@@ -38,8 +38,9 @@ public class Start extends JFrame {
         setResizable(false); // 窗口固定
 
         // 添加播放背景音乐
+        final String f = "src\\BGM\\配乐-宁静舒适.wav";
         BGM a = new BGM();
-        a.play();
+        a.play(f);
 
         // 绘制开始界面
         paint();

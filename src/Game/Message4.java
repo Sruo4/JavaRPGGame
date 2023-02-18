@@ -37,7 +37,7 @@ public class Message4 {
             public void actionPerformed(ActionEvent e) {
                 String s = jt1.getText();
                 if (s.equals("1")) {
-                    jt2.setText("我听到了邪教徒说的话·他们有一个囚犯，是狼人首領法奥楚的威胁·他们计划处决她·如果她真的是个威胁，那我们救了她似乎很重要·\n1. 好吧，我会去的。");
+                    jt2.setText("我听到了邪教徒说的话，他们有一个囚犯，\n是狼人首領法奥楚的威胁，他们计划处决她。\n如果她真的是个威胁，那我们一定要救她·\n1. 好吧，我会去的(去地图四)。");
                 } else if (s.equals("11")) {
                     jf.dispose();
                 }

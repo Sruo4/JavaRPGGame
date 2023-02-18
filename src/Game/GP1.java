@@ -13,7 +13,6 @@ import javax.swing.JPanel;
 
 public class GP1 extends GP {
 
-
     // JLabel jl1 = new JLabel(new ImageIcon("src\\Image\\map1.png"));
     Player player = new Player("src\\Image\\playerdown.png", 250, 350, this, "src\\Image\\playerup.png",
             "src\\Image\\playerdown.png", "src\\Image\\playerleft.png", "src\\Image\\playerright.png");
@@ -36,7 +35,7 @@ public class GP1 extends GP {
         ut = new UpdateThread(panel);
         ut.start();
     }
-    
+
     class MyPanel extends JPanel {
         public void paint(Graphics g) {
             // 绘制地图
@@ -47,6 +46,7 @@ public class GP1 extends GP {
 
             // 绘制npc
             npc_1.paintSelf(g);
+            npc_b.paintSelf(g);
         }
     }
 }

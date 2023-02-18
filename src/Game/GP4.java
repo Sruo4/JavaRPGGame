@@ -45,6 +45,7 @@ public class GP4 extends GP {
 
             // 绘制npc
             npc_5.paintSelf(g);
+            npc_a.paintSelf(g);
         }
     }
 }
