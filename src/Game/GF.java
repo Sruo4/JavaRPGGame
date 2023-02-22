@@ -17,7 +17,7 @@ public class GF extends JFrame {
 
     public GF() {
         setLayout(null);
-        this.setSize(1600, 1600); // 设置窗口大小
+        this.setSize(1600, 950); // 设置窗口大小
         this.setLocationRelativeTo(null); // 把窗口位置设置到屏幕中心
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 关闭窗口模式
         this.setResizable(false); // 窗口固定

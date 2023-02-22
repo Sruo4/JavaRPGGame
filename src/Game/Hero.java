@@ -37,8 +37,13 @@ public abstract class Hero {
     // 界面
 
     // npc接触标志
-    int flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0, flag5 = 0, flag6 = 0, flag7 = 0, flag8 = 0, flag9 = 0, flag10 = 0,
-            flag11 = 0, flag12 = 0, flaga = 0, flagb = 0;
+    public int flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0, flag5 = 0, flag6 = 0, flag7 = 0, flag8 = 0, flag9 = 0,
+            flag10 = 0,
+            flag11 = 0, flag12 = 0;
+
+    public static int flaga = 0;
+
+    public int flagb = 0;
 
     // 构造函数
     public Hero(String img, int x, int y, GP gp, String upImg, String downImg, String leftImg,
@@ -148,16 +153,7 @@ public abstract class Hero {
             flag5++;
         }
         if (flag5 == 1) {
-            if (next.intersects(npca.getRec()) && GF.mapId == 4) {
-                flaga++;
-            }
-            if (flaga == 1) {
-                final String f1 = "src\\BGM\\chick.wav";
-                BGM Chick = new BGM();
-                Chick.play(f1);
-                flaga++;
-                return true;
-            }
+            new Message5();
             flag5++;
             return true;
         }
